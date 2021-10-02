@@ -1,0 +1,219 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Axelerant FE Exam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:400,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://use.fontawesome.com/b2407f34fe.js"></script>
+  </head>
+
+  <body>
+    <nav class="nav-menu">
+      <div class="nav-menu__icon">
+        <span class="fas fa-bars"></span>
+      </div>
+      <div class="nav-menu__logo">LoremIpsum</div>
+
+      <div class="nav-menu__nav-items">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#" class="nav-menu__nav-items__active">Account</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Logout</a></li>
+      </div>
+
+      <div class="nav-menu__logout-icon">
+        <span class="fas fa-sign-out-alt"></span>
+      </div>
+      <div class="nav-menu__cancel-icon">
+        <span class="fas fa-times"></span>
+      </div>
+    </nav>
+
+    <div class="section-account">
+      <div class="section-account__row">
+        <div class="section-account__row__column">
+          <span src="./Image.png" class="section-account__row__acc-pic"></span>
+        </div>
+
+        <div class="section-account__column">
+          <h5>My Account</h5>
+          <div class="section-account__column__form">
+            <input
+              type="text"
+              class="section-account__column__form__txt-name"
+              value="John Doe"
+            />
+            <label class="section-account__column__form__form-label"
+              >Name</label
+            >
+            <div class="group">
+              <input
+                type="text"
+                class="section-account__column__form__txt-number"
+                placeholder="Mobile"
+              />
+
+              <input
+                type="email"
+                class="section-account__column__form__txt-email"
+                placeholder="Email"
+                value="john.doe@gmail.com"
+              />
+              <label class="section-account__column__form__form-label-Email"
+                >Email</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="seperator"></div>
+      <h3 class="select-config">Select Configuration</h3>
+      <div class="config-section">
+        <div class="config-section__config-1">
+          <input
+            id="config-section__radio-1"
+            class="config-section__config"
+            name="radio-group"
+            type="radio"
+            checked
+          />
+
+          <label
+            for="config-section__radio-1"
+            class="config-section__head-config config-section__config-label"
+            >Manual Configuration</label
+          >
+
+          <span class="config-section__sub-text"
+            >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint</span
+          >
+        </div>
+        <div class="config-section__config-text-main">
+          <label class="config-section__config-text-main-heading"
+            >Services Access</label
+          ><br />
+          <span class="config-section__config-text-main__config-text"
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            euismod magna eu purus iaculis, sed dictum nisl porttitor. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Donec neque odio,
+            lobortis eu nisl et, malesuada porta enim. Nam diam magna, tincidunt
+            ac rhoncus vel, porttitor nec ligula. Curabitur fermentum vitae elit
+            in congue.</span
+          >
+        </div>
+
+        <div class="config-section__config-2">
+          <input
+            id="config-section__radio-2"
+            class="config-section__config"
+            name="radio-group"
+            type="radio"
+          />
+
+          <label
+            for="config-section__radio-2"
+            class="config-section__head-config config-section__config-label"
+            >Semi-Automatic Configuration</label
+          >
+          <span class="config-section__sub-text"
+            >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint</span
+          >
+        </div>
+
+        <div class="config-section__config-3">
+          <input
+            id="config-section__radio-3"
+            class="config-section__config"
+            name="radio-group"
+            type="radio"
+          />
+
+          <label
+            for="config-section__radio-3"
+            class="config-section__head-config config-section__config-label"
+            >Automatic Configuration</label
+          >
+
+          <span class="config-section__sub-text"
+            >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint</span
+          >
+        </div>
+      </div>
+
+      <div class="section-config">
+        <div class="section-config__btn-group">
+          <label
+            class="section-config__modal-open section-config__modal-label"
+            for="section-config__modal-open"
+          >
+            <p style="line-height: 24px">Update Configuration</p>
+          </label>
+          <label
+            class="section-config__cancel-btn"
+            for="section-config__cancel-btn"
+          >
+            <p style="margin-left: 20px; line-height: 24px">Cancel</p>
+          </label>
+        </div>
+        <input
+          type="radio"
+          name="modal"
+          value="open"
+          id="section-config__modal-open"
+          class="section-config__modal-radio"
+        />
+        <div class="section-config__modal">
+          <label
+            class="
+              section-config__modal__modal-label section-config__modal__overlay
+            "
+          >
+            <input
+              type="radio"
+              name="modal"
+              value="close"
+              class="section-config__modal__modal-radio"
+            />
+          </label>
+          <div class="section-config__modal__content">
+            <div class="section-config__modal__content__top">
+              <i
+                class="
+                  section-config__modal__content__top__clap
+                  fa fa-thumbs-up
+                "
+                aria-hidden="true"
+              ></i>
+              <h1>Great Job</h1>
+              <label
+                class="
+                  section-config__modal__content__modal-label
+                  section-config__modal__content__close-btn
+                "
+              >
+                <input
+                  type="radio"
+                  name="modal"
+                  value="close"
+                  class="section-config__modal__content__modal-radio"
+                />
+              </label>
+            </div>
+            <p class="p">your configurations have been updated successfully.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./script.js"></script>
+</html>
